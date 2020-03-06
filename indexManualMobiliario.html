@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Manual Mobiliário</title>
+	<link rel="stylesheet" type="text/css" href="styleManualMobiliario.css">
+	<script type="text/javascript" src="scriptManualMobiliario.js"></script>
+</head>
+<body onscroll="onScroll(event);">
+	<div class="sidebar">
+		<a onclick="alterarAtivo(event);" class="active" href="#home">Home</a>
+		<a onclick="alterarAtivo(event);" href="#apresentacao">Apresentação</a>
+		<a onclick="alterarAtivo(event);" href="#acessandoSist">Acessando o Sistema</a>
+		<a onclick="alterarAtivo(event);" href="#entrandoSist">Entrando no sistema</a>
+		<a onclick="alterarAtivo(event);" href="#entendendoBasico">Entendendo o Básico</a>					
+		<a onclick="alterarAtivo(event);" href="#entendendoTelas">Entendendo as Telas</a>
+		<a onclick="alterarAtivo(event);" href="#visualizandoRegistros">Visualizando uma Consulta e Alterando Registros</a>
+		<a onclick="alterarAtivo(event);" href="#entendendoCadastro">Entendendo como Realizar um Cadastro</a>
+		<a onclick="alterarAtivo(event);" href="#trabalhandoSistema">Trabalhando com o Sistema</a>
+		<a onclick="alterarAtivo(event);" href="#cadastrandoParametros"><div class="subSidebar">1. Cadastrando e Alterando Parâmetros</div></a>
+		<a onclick="alterarAtivo(event);" href="#cadastrandoPJ"><div class="subSidebar">2. Cadastrando uma Pessoa Jurídica</div></a>
+		<a onclick="alterarAtivo(event);" href="#cadastrandoPF"><div class="subSidebar">3. Cadastrando uma Pessoa Física</div></a>
+		<a onclick="alterarAtivo(event);" href="#cadastrandoPM"><div class="subSidebar">4. Cadastrando e Alterando uma Pessoa Municipal</div></a>
+		<a onclick="alterarAtivo(event);" href="#cadastro"><div class="subSidebar2">4.1. Cadastro</div></a>
+		<a onclick="alterarAtivo(event);" href="#alteracao"><div class="subSidebar2">4.2. Alteração</div></a>
+		<a onclick="alterarAtivo(event);" href="#insercaoInform"><div class="subSidebar2">4.3. Inserção de Novas Informações</div></a>
+		<a onclick="alterarAtivo(event);" href="#cnae"><div class="subSidebar3">4.3.1. CNAE</div></a>
+		<a onclick="alterarAtivo(event);" href="#cadastrandoVistoria"><div class="subSidebar">5. Cadastrando uma Vistoria</div></a>
+	</div>
+
+	<div class="content">
+		
+		<!-- page1 -->
+		<section id="home">
+			<p class="cabecalho">Sucupira<br>
+			Secretaria de Desenvolvimento Econômico, Ciência, Tecnologia e Trabalho</p>
+			<div class="titulo"><h1 class="titulo">Manual do Usuário: Sistema Gestão Cadastro Receita</h1>
+				<img src="Imagens Manual\brasao.png" class="brasao_img" alt="Brasão Sucupira">
+			</div>
+			<p class="saveDate">Última Atualização: quarta-feira, 26 de julho de 2017</p>
+		</section>
+		
+		<!-- page2 -->
+		<section id="conteudo">			
+			<h1>Conteúdo</h1>
+			<ul>
+				<a href="#apresentacao"><li>Apresentação</li></a>
+				<a href="#acessandoSist"><li>Acessando o Sistema</li></a>
+				<a href="#entrandoSist"><li>Entrando no sistema</li></a>
+				<a href="#entendendoBasico"><li>Entendendo o Básico</a>
+					<ul>
+						<a href="#entendendoTelas"><li>Entendendo as Telas</li></a>
+						<a href="#visualizandoRegistros"><li>Visualizando uma Consulta e Alterando Registros</li></a>
+						<a href="#entendendoCadastro"><li>Entendendo como Realizar um Cadastro</li></a>
+					</ul>
+				</li>
+				<a href="#trabalhandoSistema"><li>Trabalhando com o Sistema</a>
+					<ul>
+						<a href="#cadastrandoParametros"><li>1. Cadastrando e Alterando Parâmetros</li></a>
+						<a href="#cadastrandoPJ"><li>2. Cadastrando uma Pessoa Jurídica</li></a>
+						<a href="#cadastrandoPF"><li>3. Cadastrando uma Pessoa Física</li></a>
+						<a href="#cadastrandoPM"><li>4. Cadastrando e Alterando uma Pessoa Municipal</li></a>
+						<ul>
+							<a href="#cadastro"><li>4.1. Cadastro</li></a>
+							<a href="#alteracao"><li>4.2. Alteração</li></a>
+							<a href="#insercaoInform"><li>4.3. Inserção de Novas Informações</li></a>
+							<ul>
+								<a href="#cnae"><li>4.3.1. CNAE</li></a>
+							</ul>						
+						</ul>
+						<a href="#cadastrandoVistoria"><li>5. Cadastrando uma Vistoria</li></a>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<!-- page3 -->
+		<section id="apresentacao">
+			<h2>Apresentação</h2>
+			<p>
+				Esse manual tem como objetivo apresentar como é possível trabalhar com o sistema atual de <b><span class="fonteLaranja">Gestão Cadastro Receita</span></b> da cidade e realizar tarefas diárias com o sistema. Nos primeiros capítulos, veremos alguns conceitos básicos e nos capítulos seguintes, veremos explicações de como usá-lo por passos, com exemplos.
+			</p>
+			<p><i>Para facilitar a compreensão deste guia, veja abaixo alguns recursos utilizados</i>:</p>
+
+			<table>
+				<tr>
+					<td>
+						<div class="blocoNota _1"><img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota"><p><b>INFORMAÇÃO</b></p></div>
+					</td>
+
+					<td><p>Caixas como essa possuem dicas ou informações complementares que podem ser importantes</p></td>
+				</tr>
+
+				<tr>
+					<td><p><span class="fonteLaranja"><a href="http://www.sucupira.sp.gov.br" target ="_blank" class="link">www.sucupira.sp.gov.br</a></span></p></td>
+					<td><p>Links são usados para mostrar o caminho de uma página de Internet</p></td>
+				</tr>
+
+				<tr>
+					<td><p><b><span class="fonteLaranja">( # ):</span></b> Explicação <img src="Imagens Manual\explicacao.png" class="explicacao_img" alt="Ícone N.º #"></p></td>
+					<td><p>Algumas imagens têm esse balão que é identificado por um número e que aponta para algo que será explicado.</p></td>
+				</tr>
+
+				<tr>
+					<td><p><b>1  Título
+						<br>1.1  Subtítulo</b></p>
+					</td>
+					<td>
+						<p>Os tópicos são enumerados para que você encontre mais rápido o conteúdo que quiser. Use o sumário (Conteúdo) do manual para ver a página de cada tópico.</p>
+					</td>
+				</tr>
+			</table>
+
+			<div class="blocoInformacao _1">
+				<p>Caso tenha recebido uma cópia impressa deste manual, você também pode acessá-lo através do menu <span class="fonteAzul">Ajuda</span>:</p><img src="Imagens Manual\manual.png" class="manual_img" alt="Ícone Manual">
+			</div>
+
+			<div class="blocoNota _2">
+				<img src="Imagens Manual\aviso.png" class="aviso_img" alt="Ícone Aviso">
+				<p>Os dados apresentados foram utilizados como exemplo para a elaboração do conteúdo, portanto os exemplos se aplicam somente a este manual.</p>
+			</div>
+		</section>
+
+		<!-- page4 -->
+		<section id="acessandoSist">
+			<h2>Acessando o Sistema</h2>
+			<p>Você pode acessar o sistema diretamente pelo endereço:</p>
+			<p><a href="http://treinamento/servicosonline/GestaoCadastroReceita/Login/Login.aspx" target ="_blank" class="link">http://treinamento/servicosonline/GestaoCadastroReceita/Login/Login.aspx</a></p>
+
+			<div class="blocoNota _3">
+				<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+				<p>Na área <span class="fonteAzul">Serviços Online</span> o ícone do sistema <span class="fonteVermelha">Gestão Cadastro Receita</span> deverá ser este:</p>
+				<img src="Imagens Manual\GestaoCadastroReceita.png" class="gestao_cadastro_img" alt="Ícone Gestão Cadastro Receita">
+			</div>
+		</section>
+
+		<section id="entrandoSist">
+			<h2>Entrando no sistema</h2>
+			<p>Ao acessar o sistema você deverá entrar com seu login e sua senha:</p>
+			<img src="Imagens Manual\acesso aos servicos.png" class="acesso_servicos_img" alt="Tela Acesso aos Serviços">
+		</section>
+
+		<!-- page5 -->
+		<section id="entendendoBasico">
+			<h2>Entendendo o Básico</h2>
+			<img src="Imagens Manual\entendendo o basico.png" class="entendendo_basico_img" alt="Entendendo Tela Gestão Cadastro Receita">
+
+			<div class="entendendoBasico _1">
+				<img src="Imagens Manual\mobiliario clique.png" class="mobiliario_clique_img" alt="Clicar Ícone Mobiliário">
+				<p><b><span class="fonteLaranja">(1) Menu Principal:</span></b> onde há várias opções com ícones. Para acessá-lo basta clicar.</p>
+			</div>
+
+			<div class="entendendoBasico _2">
+				<p><b><span class="fonteLaranja">(2) Menu:</span></b> onde é possível acessar as mesmas opções do menu principal. Para usá-lo clique com o mouse sobre o texto <span class="fonteAzul">Menu</span> no canto superior esquerdo, abaixo do logo da cidade</p>
+				<img src="Imagens Manual\Menu.png" class="menu_img" alt="Tela Menu">
+			</div>
+
+			<div class="entendendoBasico _3">
+				<img src="Imagens Manual\alterar senha.png" class="alterar_senha_img" alt="Alterar Senha">
+				<p><b><span class="fonteLaranja">(3) Alterar minha Senha:</span></b> Clicando nesse link você poderá alterar a sua senha para a senha de sua preferência. Na tela que aparece, digite sua senha atual, sua nova senha e confirme.</p>
+			</div>
+
+			<div class="entendendoBasico _4">
+				<p><b><span class="fonteLaranja">(4)</span></b> Ao clicar em <b><span class="fonteLaranja">Sair</span></b> você sairá do sistema e voltará para a tela de login, mesmo que tenha marcado a opção <i>Lembrar meu usuário</i>.</p>
+			</div>			
+		</section>
+
+		<!-- page6 -->
+		<section id="entendendoTelas">
+			<h3>Entendendo as Telas</h3>
+			<p>
+				Para facilitar o manuseio do sistema, todas as telas possuem formato semelhante. Vamos tomar como exemplo a <span class="fonteAzul">Consulta de Vistoria</span>. Ao acessar esta opção, a primeira tela apresentada é de consulta, como podemos ver a seguir:
+			</p>
+
+			<img src="Imagens Manual\consultar vistoria.png" class="cnsultar_vistoria_img" alt="Entendendo Tela Consultar Vistoria">
+
+			<p><b><span class="fonteLaranja">(1) Consultar:</span></b> Ao clicar no botão <button class="fonteBotao">Consultar</button> será feita a consulta das vistorias cadastradas.</p>
+			
+			<p><b><span class="fonteLaranja">(2) Campos de Pesquisa:</span></b> São usados para filtrar a pesquisa. Por exemplo, ao digitar qualquer texto no campo CNPJ e clicar em <button class="fonteBotao">Consultar</button>, todas vistorias cadastradas nesse CNPJ serão encontradas.</p>
+
+			<p><b><span class="fonteLaranja">(3) Limpar:</span></b> Ao clicar no botão <button class="fonteBotao">Limpar</button> todos os campos serão apagados para que não seja necessário apagá-los manualmente.</p>
+
+			<p><b><span class="fonteLaranja">(4) Cadastrar:</span></b> Ao clicar em <button class="fonteBotao">Cadastrar</button> você será redirecionado para uma página de cadastro.</p>
+		</section>
+
+		<!-- page7 -->
+		<section id="visualizandoRegistros">
+			<h3>Visualizando uma Consulta e Alterando Registros</h3>
+			<p>No exemplo a seguir, Consultamos todas as <span class="fonteVerde">Pessoas Municipais</span> (sem filtrar a pesquisa). Ao clicar em Consultar, aparece a seguinte tabela:</p>
+			<img src="Imagens Manual\tabela pessoas municipais.png" class="tabela_pm_img" alt="Entendendo Tela Tabela Pessoas Municipais">
+
+			<p><b><span class="fonteLaranja">(1)</span></b> Cada <span class="fonteLaranja">linha</span> representa um Registro que foi cadastrado. Neste caso cada linha é uma Pessoa Municipal.</p>
+
+			<p><b><span class="fonteLaranja">(2)</span></b> Cada <span class="fonteLaranja">coluna</span> mostra informações relevantes do registro. Pode ser que existam mais informações no cadastro, mas às vezes somente as informações consideradas mais importantes são mostradas.</p>
+
+			<p><b><span class="fonteLaranja">(3)</span></b>  Você poderá selecionar uma <span class="fonteLaranja">ação</span> para um registro. Algumas das ações que podem aparecer são:</p>
+
+			<table>
+				<tr>
+					<td>
+						<p>
+							<img src="Imagens Manual\btn_editar.gif" class="btn_editar_img" alt="Ícone Botão Editar"> 
+							ou 
+							<img src="Imagens Manual\btn_alterar.gif" class="btn_alterar_img" alt="Ícone Botão Alterar" alt="Ícone Botão Alterar">
+						</p>
+					</td>
+
+					<td><p>Os dados daquele registro serão alterados em uma tela que será aberta ao clicar ou na própria linha. Caso uma nova tela seja aberta, caso clique em <button class="fonteBotao">Alterar</button> ou <button class="fonteBotao">Gravar</button> para confirmar a alteração.</p></td>
+				</tr>
+
+				<tr>
+					<td>
+						<img src="Imagens Manual\btn_inf_.gif" class="btn_inf_img" alt="Ícone Botão Informações">
+					</td>
+					<td>
+						<p>São exibidas informações adicionais sobre determinado registro.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<img src="Imagens Manual\btn_cancelar.gif" class="btn_cancelar_img" alt="Ícone Botão Cancelar">
+					</td>
+					<td>
+						<p>A ação de alteração em linha é cancelada.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="Imagens Manual\btn_excluir.gif" class="btn_excluir_img" alt="Ícone Botão Excluir">
+					</td>
+					<td>
+						<p>Inativa ou exclui um registro. É necessário confirmar clicando em <button class="fonteBotao">OK</button>.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="Imagens Manual\btn_seta.gif" class="btn_seta_img" alt="Ícone Botão Selecionar">
+					</td>
+					<td>
+						<p>Seleciona um registro que terá as informações colocadas no formulário.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="Imagens Manual\Add_Item.gif" class="Add_Item_img" alt="Ícone Botão Adionar">
+					</td>
+					<td>
+						<p>Adiciona um novo registro.</p>
+					</td>
+				</tr>
+			</table>			
+
+			<!-- page8 -->			
+			<p><b><span class="fonteAzul">(4)</span></b> Tipos de alteração:</p>
+
+			<table>
+				<tr>
+					<td rowspan="2">
+						<p>Em linha:</p>
+					</td>
+					<td>
+						<img src="Imagens Manual\alteracao tipo endereco.png" class="alteracao_endereco_img" alt="Alteração em Linha">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Neste caso clique em <img src="Imagens Manual\btn_alterar.gif" class="btn_alterar_img" alt="Ícone Botão Alterar"> para confirmar a alteração do registro ou clique no ícone <img src="Imagens Manual\btn_cancelar.gif" class="btn_cancelar_img" alt="Ícone Botão Cancelar"> para cancelar.</p>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">
+						<p>Em uma tela:</p>
+					</td>
+					<td>
+						<img src="Imagens Manual\alterar pessoa municipal.png" class="alterar_pm_img" alt="Alteração em Tela">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Neste caso clique em <button class="fonteBotao">Alterar</button> para confirmar a alteração.</p>
+					</td>
+				</tr>
+			</table>
+
+			<div class="blocoNota _4">
+				<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+				<p>
+					Quando um registro está <b><span class="fonteAzul">Ativo</span></b> significa que ele pode ser utilizado.
+					Enquanto um registro estiver <b><span class="fonteVermelha">Inativo</span></b> ele não poderá ser usado.
+				</p>
+				<img src="Imagens Manual\checkbox.png" class="checkbox_img" alt="Checkbox">
+			</div>
+		</section>
+
+		<!-- page9 -->
+		<section id="entendendoCadastro">
+			<h3>Entendendo como Realizar um Cadastro</h3>
+			<p>Ao clicar em <button class="fonteBotao">Cadastrar</button> uma tela para cadastro aparecerá.
+				<br>Vamos utilizar como o exemplo o <span class="fonteAzul">Cadastro de Empresa</span>.
+			</p>
+			<img src="Imagens Manual\cadastro de empresa.png" class="cadastro_empresa_img" alt="Tela Cadastro de Empresa">
+
+			<div class="entendendoCadastro _1">
+				<img src="Imagens Manual\cnpj invalido.png" class="cnpj_invalido_img" alt="Mensagem CNPJ Inválido">
+				<p><b><span class="fonteLaranja">(1) Campos obrigatórios:</span></b> Alguns dados são obrigatórios e outros não. Por exemplo, quando tentamos cadastrar <u>sem digitar o CNPJ</u>, aparece a mensagem ao lado.</p>
+			</div>
+			<div class="entendendoCadastro _2">
+				<p><b><span class="fonteLaranja">(2) Mensagem de erro:</span></b> Essas mensagens aparecem caso haja algum tipo de restrição no sistema.</p>
+				<img src="Imagens Manual\erro cadastro exist.png" class="erro_cadastro_exist_img" alt="Erro Cadastro Existente">
+			</div>
+			<div class="entendendoCadastro _3">
+				<img src="Imagens Manual\operacao realizada.png" class="operacao_realizada_img" alt="Mensagem Operação Realizada">
+				<p><b><span class="fonteLaranja">(3) Cadastro concluído com sucesso:</span></b> Se todos os dados estiverem corretos, o cadastro será concluído e você deverá ver uma mensagem como esta ao lado.</p>
+			</div>
+		</section>
+
+		<!-- page10 -->
+		<section id="trabalhandoSistema">
+			<h2>Trabalhando com o Sistema</h2>
+
+			<div class="blocoNota _5">
+				<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+				<p>Se ainda não entendeu como funcionam as telas, como é feita uma consulta ou como fazer um cadastro, leia novamente os tópicos de <b><span class="fonteAzul">Entendendo o Básico</span></b> antes de prosseguir.
+				</p>
+			</div>
+
+			<p>Neste tópico, veremos como atualmente funciona o sistema para realizar operações diárias do seu trabalho. Cada passo será separado por partes do sistema que geralmente são representadas por ícones. Para facilitar o acesso cada capítulo terá o ícone do menu.</p>
+
+			<section id="cadastrandoParametros">
+				<h3>1. Cadastrando e Alterando Parâmetros</h3>
+
+				<div class="blocoInformacao _2">
+					<p><span class="fonteAzul">Parâmetros:</span> é um termo técnico para tudo aquilo que é essencial para se fazer um cadastro ou identificar um registro.
+						<br>Por exemplo, para dizer que um <span class="fonteVerde">Endereço</span> é um Cartório, cadastramos um <span class="fonteAzul">Tipo de Endereço</span> como Cartório. Acesse o menu:
+					</p>
+					<img src="Imagens Manual\mobiliario.png" class="mobiliario_img" alt="Ícone Mobiliário">
+					<img src="Imagens Manual\seta.png" class="seta_img" alt="Seta">
+					<img src="Imagens Manual\parametros.png" class="parametros_img"  alt="Ícone Parâmetros">
+				</div>
+
+				<p>Como os cadastros de Parâmetros para Tipo Representante e Tipo Endereço são semelhantes, vamos utilizar apenas um deles como exemplo. No exemplo, utilizamos <span class="fonteAzul">Tipo Endereço</span>.</p>
+
+				<p><b><span class="fonteLaranja">(1)</span></b> Na tela de consulta clique em <button class="fonteBotao">Cadastrar</button>, então digite um nome para este tipo e clique em <button class="fonteBotao">Gravar</button>:</p>
+				<img src="Imagens Manual\cadastro tipo endereco(parametros).png" class="cadastro_end_parametros_img" alt="Tela Cadastro Endereço">			
+
+				<!-- page11 -->
+				<p><b><span class="fonteLaranja">(2)</span></b> Na consulta, o registro CORRESPONDENCIA estará disponível e você poderá alterá-lo clicando no ícone de ação <img src="Imagens Manual\btn_editar.gif" class="btn_editar_img" alt="Ícone Botão Editar"> e depois clicando em <img src="Imagens Manual\btn_alterar.gif" class="btn_alterar_img" alt="Ícone Botão Alterar"> para confirmar, em <img src="Imagens Manual\btn_cancelar.gif" class="btn_cancelar_img" alt="Ícone Botão Cancelar"> para cancelar ou então em <img src="Imagens Manual\btn_excluir.gif" class="btn_excluir_img" alt="Ícone Botão Excluir"> para inativar.</p>
+				<img src="Imagens Manual\Consulta registro parametros.png" class="consulta_parametros_img" alt="Tela Consulta Parâmetros">
+			</section>
+
+			<!-- page12 -->
+			<section id="cadastrandoPJ">
+				<h3>2. Cadastrando uma Pessoa Jurídica</h3>
+
+				<div class="blocoInformacao _3">
+					<p>Para cadastrar uma Empresa ou Instituição como <span class="fonteAzul">Pessoa Jurídica</span> acesse o menu principal:</p>
+					<img src="Imagens Manual\cadastro_pessoas.png" class="cadastro_pessoas_img" alt="Ícone Cadastro">
+					<img src="Imagens Manual\seta.png" class="seta_img" alt="Seta">
+					<img src="Imagens Manual\cadastro_pessoa_juridica.png" class="cadastro_pj_img" alt="Ícone Pessoa Jurídica">
+				</div>
+
+				<p><b><span class="fonteLaranja">(1)</span></b> Ao clicar em <button class="fonteBotao">Cadastrar</button> na consulta de Pessoas Jurídicas, a tela abaixo será apresentada. Neste exemplo inserimos algumas informações:</p>
+				<img src="Imagens Manual\cadastro de empresa com parametros.png" class="cadastro_empresa_parametros_img" alt="Tela Cadastro de Empresa">
+
+				<p><b><span class="fonteLaranja">(2)</span></b> Após fornecer os dados adequadamente e clicar em <button class="fonteBotao">Cadastrar</button>, a Pessoa Jurídica estará disponível para consulta:</p>
+				<img src="Imagens Manual\consulta pj sedettra.png" class="consulta_pj_sedettra_img" alt="Tela Consulta de Empresa">
+
+				<p><b><span class="fonteLaranja">(3)</span></b> Para alterar, clique em <img src="Imagens Manual\alterar_empresa.gif" class="alterar_empresa_img" alt="Ícone Botão Ação Alterar">, altere os dados necessários e clique <button class="fonteBotao">Gravar</button>:</p>
+
+				<!-- page13 -->
+				<img src="Imagens Manual\alteracao pj.png" class="alteracao_pj_img"  alt="Tela Alteração de Empresa">
+			</section>
+		</section>
+
+		<!-- page14 -->
+		<section id="cadastrandoPF">
+			<h3>3. Cadastrando uma Pessoa Física</h3>
+
+			<div class="blocoInformacao _4">
+				<p>O cadastro de uma <span class="fonteVermelha">Pessoa Física</span> é feito utilizando o <span class="fonteAzul">Cadastro Social Único</span> da cidade para que as pessoas tenham um cadastro único e sejam identificadas por ele.</p>
+				<img src="Imagens Manual\cadastro_pessoas.png" class="cadastro_pessoas_img" alt="Ícone Cadastro">
+				<img src="Imagens Manual\seta.png" class="seta_img" alt="Seta">
+				<img src="Imagens Manual\cadastro_pessoa_fisica.png" class="cadastro_pf_img" alt="Ícone Pessoa Física">
+			</div>
+
+			<p>Antes de realizar um cadastro de Pessoa Física, é necessário verificar se ela existe, inserindo informações nos campos da <u>consulta do Cadastro Único</u> e depois clicando em <button class="fonteBotao">Consultar</button>, como feito no exemplo abaixo:</p>
+			<img src="Imagens Manual\consulta cadastro social unico.png" class="consulta_unico_img" alt="Tela Consulta Cadastro Social Único">
+
+			<p><b><span class="fonteLaranja">(1)</span></b> Caso ainda não exista o registro do cadastro, basta clicar em <button class="fonteBotao">Cadastrar</button>. Dessa forma, aparecerá um formulário para ser preenchido com os dados da pessoa. No exemplo abaixo foram inseridas algumas informações para o cadastro:</p>
+			<img src="Imagens Manual\cadastro pf2.png" class="cadastro_pf2_img" alt="Tela Cadastro Social Único">
+
+			<!-- page15 -->
+			<p><b><span class="fonteLaranja">(2)</span></b> Após inserir corretamente os dados da pessoa, clique em <button class="fonteBotao">Cadastrar</button>. Lembre-se que alguns dados não são obrigatórios. Caso haja alguma informação faltando, veja a mensagem que aparece no fim, como a seguir:</p>
+			<img src="Imagens Manual\erros cadastro pf.png" class="erros_pf_img" alt="Mensagem Erros Cadastro">
+
+			<p><b><span class="fonteLaranja">(3)</span></b> Em alguns casos o sistema pode ter encontrado <i><span class="fonteVermelha">Semelhantes</span></i>, cadastros que já foram feitos com as mesmas informações ou com informações muito parecidas, como no exemplo abaixo:</p>
+			<img src="Imagens Manual\semelhantes.png" class="semelhantes_img" alt="Cadastro Semelhante">
+
+			<p>Neste caso não será permitido o cadastro. Você poderá alterar o cadastro já existente clicando em <img src="Imagens Manual\btn_alterar.gif" class="btn_alterar_img" alt="Ícone Botão Alterar"> ou poderá comparar o cadastro já existente com a pessoa que está tentando cadastrar clicando em <img src="Imagens Manual\btn_inf_.gif" class="btn_inf_img" alt="Ícone Botão Informações">. Se quiser revisar os dados do novo cadastro clique em <button class="fonteBotao">Cancelar</button>, ou se não quiser mais cadastrar esta Pessoa Física clique em <button class="fonteBotao">Voltar</button>.</p>
+
+			<p><b><span class="fonteLaranja">(4)</span></b> Caso o cadastro tenha sido realizado corretamente aparecerá a mensagem:
+			</p>
+			<img src="Imagens Manual\processo de cadastro realizado.png" class="processo_realizado_img" alt="Mensagem Cadastro Realizado">
+
+			<!-- page16 -->
+			<p>Na <u>Consulta do Cadastro Social Único</u> você poderá clicar em <img src="Imagens Manual\btn_alterar.gif" class="btn_alterar_img" alt="Ícone Botão Alterar"> para alterar uma pessoa já cadastrada. Os dados da pessoa serão copiados para um formulário semelhante ao de cadastro. Portanto, siga os passos do cadastro para alterar os dados da Pessoa Física.</p>
+		</section>
+
+		<!-- page17 -->
+		<section id="cadastrandoPM">			
+			<h3>4. Cadastrando e Alterando uma Pessoa Municipal</h3>
+
+			<div class="blocoInformacao _5">				
+				<p>Para cadastrar uma Pessoa Jurídica ou Pessoa Física como <span class="fonteAzul">Pessoa Municipal</span> acesse o menu principal:</p>
+				<img src="Imagens Manual\mobiliario.png" class="mobiliario_img" alt="Ícone Mobiliário">
+				<img src="Imagens Manual\seta.png" class="seta_img" alt="Seta">
+				<img src="Imagens Manual\cadastro_pessoa_municipal.png" class="cadastro_pm_img" alt="Ícone Pessoa Municipal">
+			</div>
+
+			<section id="cadastro">
+				<h4>4.1. Cadastro</h4>
+				<div class="blocoNota _6">
+					<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+					<p>Antes de realizar o cadastro de uma Pessoa Municipal, é necessário o cadastro como Pessoa Jurídica ou Pessoa Física através do <span class="fonteAzul">Cadastro Social Único</span>.</p>
+				</div>
+
+				<p>Quando já houver o cadastro, basta acessar o link de Pessoa Municipal, no menu do Mobiliário. Então, aparecerá uma tela de <span class="fonteAzul">Consulta de Pessoa Municipal</span>, onde será possível realizar uma consulta ou cadastro, bastando clicar em <button class="fonteBotao">Cadastrar</button> para inserir uma nova Pessoa Municipal no sistema.</p>
+				<img src="Imagens Manual\consulta pessoa municipal.png" class="consulta_pm_img" alt="Tela Consultar Pessoa Municipal">
+
+				<p><b><span class="fonteLaranja">(1)</span></b> Após clicar no botão de cadastro, uma nova página será aberta, para que seja selecionada a classificação de Pessoa Municipal a ser cadastrada:</p>
+
+				<!-- page18 -->
+				<img src="Imagens Manual\classificacao pessoa municipal.png" class="classificacao_pm_img" alt="Menu Selecionar Classificação Pessoa Municipal">
+				<p><b><span class="fonteLaranja">(2)</span></b> Selecionada a classificação, outra página abrirá, onde será possível, efetivamente, realizar um cadastro. Aqui, o exemplo utilizado é de <span class="fonteAzul">Pessoa Jurídica Estabelecida</span>:</p>
+				<img src="Imagens Manual\cadastro pessoa municipal - formulario.png" class="cadastro_pm_form_img" alt="Tela Exemplo Pessoa Jurídica Estabelecida">
+
+				<div class="blocoNota _7">
+					<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+					<p>Para cada classificação de Pessoa Municipal, existem campos que ficam ou não habilitados. No entanto, qualquer que seja a classificação, os campos obrigatórios são identificados com um asterisco (<span class="fonteVermelha">*</span>) ao fim de cada campo.</p>
+				</div>
+
+				<p><b><span class="fonteLaranja">(3)</span></b> Considerando que o cadastro é de uma Pessoa Jurídica ou uma Pessoa Física previamente cadastrada, quando um documento é colocado (CPF ou CNPJ), basta clicar <!-- page19 -->em <img src="Imagens Manual\lupa2.png" class="lupa_img" alt="Ícone Botão Lupa"> para que os dados atrelados àquele cadastro sejam inseridos de forma automática no formulário.</p>
+
+				<p><b><span class="fonteLaranja">(4)</span></b> Caso seja uma Pessoa Jurídica, será mostrada uma tabela, onde os processos da mesma podem ser selecionados, clicando em <img src="Imagens Manual\btn_seta.gif" class="btn_seta_img" alt="Ícone Botão Selecionar">.</p>
+				<img src="Imagens Manual\cadastro pessoa municipal - processos.png" class="cadastro_pm_processos_img" alt="Tabela Processos Pessoa Jurídica">
+
+				<p><b><span class="fonteLaranja">(5)</span></b> Caso não haja uma Vistoria cadastrada para a Pessoa Jurídica selecionada, uma janela será aberta, solicitando o cadastro de uma nova vistoria. Clicando em <button class="fonteBotao">OK</button>, uma nova página será aberta para o cadastro de Vistoria, o que será explicado no próximo capítulo.</p>
+				<img src="Imagens Manual\mensagem para cadastro de vistoria.png" class="mensagem_img" alt="Janela Cadastrar Nova Vistoria">
+
+				<p><b><span class="fonteLaranja">(6)</span></b> Após inserir corretamente os dados, clique em <button class="fonteBotao">Cadastrar</button>.</p>
+			</section>
+
+			<section id="alteracao">
+				<h4>4.2. Alteração</h4>
+
+				<p><b><span class="fonteLaranja">(1)</span></b> Para realizar a alteração de uma Pessoa Municipal, clique em <img src="Imagens Manual\btn_editar.gif" class="btn_editar_img" alt="Ícone Botão Editar">. Uma página de alteração abrirá, onde será possível alterar campos que não estejam relacionados ao <span class="fonteAzul">Cadastro</span> de Pessoa Jurídica ou Física.</p>	
+
+				<!-- page20 -->
+				<img src="Imagens Manual\alteracao pessoa municipal.png" class="alteracao_pm_img" alt="Tela Alteração Pessoa Municipal">
+
+				<p><b><span class="fonteLaranja">(2)</span></b> Para salvar as modificações feitas, clique em <button class="fonteBotao">Alterar</button>.</p>
+			</section>
+
+			<section id="insercaoInform">
+				<h4>4.3. Inserção de Novas Informações</h4>
+
+				<p>Na tela de alteração, logo após o formulário, será exibido um Menu, onde informações adicionais poderão ser inseridas:</p>
+				<img src="Imagens Manual\menu alteracao pessoa municipal.png" class="menu_pm_img" alt="Menu Alteração Pessoa Municipal">
+
+				<p>Em cada item do Menu, clicando em <img src="Imagens Manual\Add_Item.gif" class="Add_Item_img" alt="Ícone Botão Adionar">, será possível inserir uma informação nova.</p>
+
+				<section id="cnae">
+					<h5>4.3.1. CNAE</h5>
+
+					<p>Para inserir um novo CNAE, utilize o procedimento comum para inserção de informações novas relacionadas à empresa.</p>
+					<p>A partir daí, uma janela para pesquisa de CNAE será aberta:</p>
+
+					<!-- page21 -->
+					<img src="Imagens Manual\pesquisa CNAE.png" class="pesquisa_cnae_img" alt="Tela Pesquisa CNAE">
+
+					<p><b><span class="fonteLaranja">(1)</span></b> A pesquisa pode ser realizada com a inserção de palavras-chave ou números relacionados ao CNAE a ser pesquisado. Após essa inserção, clique em <img src="Imagens Manual\search.png" class="search_img" alt="Ícone Botão Pesquisar">. </p>
+
+					<p><b><span class="fonteLaranja">(2)</span></b> Neste momento, uma nova janela abrirá, mostrando os resultados relacionados à sua pesquisa.</p>
+					<img src="Imagens Manual\pesquisa CNAE - resultados.png" class="resultados_cnae_img" alt="Tela Resultados Pesquisa CNAE">
+
+					<p><b><span class="fonteLaranja">(3)</span></b> Para selecionar o CNAE desejado, clique em <img src="Imagens Manual\btn_seta.gif" class="btn_seta_img" alt="Ícone Botão Selecionar">, que abrirá uma janela contendo as informações do CNAE selecionado. Para escolhê-lo, clique em <button class="fonteBotao">Gravar</button>.</p>
+
+					<!-- page22 -->
+					<img src="Imagens Manual\selecao cnae.png" class="selecao_cnae_img" alt="Tela Seleção CNAE">
+
+					<div class="blocoNota _8">
+						<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+						<p>Na tabela de CNAE, o CNAE de maior valor ficará automaticamente selecionado, não sendo possível mudar para outro de menor valor. 
+						Caso a atividade relacionada ao CNAE seja passível de vigilância sanitária, a opção com na coluna de mesmo nome ficará automaticamente selecionada, impossibilitando que seja desmarcada.</p>				
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- page23 -->
+		<section id="cadastrandoVistoria">
+			<h3>5. Cadastrando uma Vistoria</h3>
+
+			<div class="blocoInformacao _6">
+				<p>Para cadastrar uma <span class="fonteAzul">Vistoria</span> atrelada a uma Pessoa Jurídica ou Física, acesse o menu principal:</p>
+				<img src="Imagens Manual\mobiliario.png" class="mobiliario_img" alt="Ícone Mobiliário">
+				<img src="Imagens Manual\seta.png" class="seta_img" alt="Seta">
+				<img src="Imagens Manual\vistoria.png" class="vistoria_img" alt="Ícone Vistoria">
+			</div>
+
+			<div class="blocoNota _9">
+				<img src="Imagens Manual\nota.png" class="nota_img" alt="Ícone Nota">
+				<p>O cadastro de Vistoria está relacionado a uma Pessoa Jurídica, por isso, deve ser verificado se a Pessoa Jurídica já encontra-se cadastrada. Além disso, é obrigatório que haja um <span class="fonteAzul">processo</span> atrelado a essa Pessoa.</p>
+			</div>			
+
+			<p>Para realizar o cadastro de uma Vistoria, deve-se acessar a opção de Vistoria no Menu do Mobiliário, que mostrará o seguinte formulário:</p>
+			<img src="Imagens Manual\consulta vistoria.png" class="consulta_vistoria_img" alt="Tela Colsultar Vistoria">
+
+			<!-- page24 -->
+			<p><b><span class="fonteLaranja">(1)</span></b> Caso deseje cadastrar uma nova Vistoria, basta clicar em <button class="fonteBotao">Cadastrar</button>, que abrirá uma nova janela:</p>
+			<img src="Imagens Manual\cadastro vistoria.png" class="cadastro_vistoria_img" alt="Tela Cadastro de Vistoria">
+
+			<p><b><span class="fonteLaranja">(2)</span></b> Nessa janela, ao inserir o CNPJ ou CPF de uma Pessoa Jurídica ou Física e clicar em <img src="Imagens Manual\lupa2.png" class="lupa_img" alt="Ícone Botão Lupa">, dados básicos serão inseridos de forma automática no formulário. Além disso, é exibida uma tabela com os processos atrelados à Pessoa, onde um deles deve ser selecionado ao clicar em &nbsp<img src="Imagens Manual\btn_seta.gif" class="btn_seta_img" alt="Ícone Botão Selecionar">.</p>
+			<img src="Imagens Manual\cadastro pessoa municipal - processos.png" class="cadastro_pm_processos_img" alt="Tabela Processos Pessoa">
+
+			<p><b><span class="fonteLaranja">(3)</span></b> Logo após, devem ser inseridas informações referentes à Vistoria. Vale salientar que para selecionar o Fiscal responsável pela Vistoria, é necessário inserir o número no campo <span class="fonteAzul">Funcional Fiscal</span> e depois, clicar em <img src="Imagens Manual\lupa2.png" class="lupa_img" alt="Ícone Botão Lupa">, que inserirá automaticamente o nome do Fiscal ao formulário.
+
+			<!-- page25 -->
+			<br>Outra forma de preencher o campo referente ao Fiscal é digitando no campo <span class="fonteAzul">Nome do Fiscal</span> o nome do mesmo e automaticamente opções de nome serão ofertadas, entre elas o nome inicialmente digitado. Sendo esta a sua opção basta selecioná-lo, o campo é preenchido e este nome figurará como o do Fiscal responsável pela vistoria, ao fim do Cadastro.</p>
+			<img src="Imagens Manual\fiscal.png" class="fiscal_img" alt="Tela Fiscal">
+
+			<p><b><span class="fonteLaranja">(4)</span></b> Após inserir as informações corretas, clique em <button class="fonteBotao">Gravar</button>.</p>
+		</section>
+	</div>
+</body>
+</html>

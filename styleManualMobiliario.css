@@ -1,0 +1,412 @@
+/*====== PADROES ======*/
+
+/*====== ESTRUTURA ======*/
+
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+div.content {
+	padding-left: 260px;
+	padding-right: 50px;
+	left: 180px;
+	display: block
+}
+
+section#home {
+	height: 455px;
+}
+
+/*====== MENU LATERAL ======*/
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 210px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	font-size: 13px;
+	top: 0px;
+}
+
+.sidebar a {
+	display: block;
+	color: black;
+	padding: 15px 30px 18px;
+	text-decoration: none;
+}
+
+.sidebar a.active {
+	background-color: #E36C0A;
+	color: white;
+	transition: 0.5s;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+
+.subSidebar {
+	margin-left: 20px;
+	font-size: 12px;
+}
+
+.subSidebar2 {
+	margin-left: 30px;
+	font-size: 11px;
+}
+
+.subSidebar3 {
+	margin-left: 40px;
+	font-size: 10px;
+}
+
+/*====== SCROLL ======*/
+
+.sidebar::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+.sidebar::-webkit-scrollbar:vertical {
+	width: 11px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 2px solid white;
+	background-color: rgba(193, 193, 193);
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+	border-radius: 8px;
+	border: 2px solid white;
+	background-color: rgba(168, 168, 168);
+}
+
+/*====== FONTES ======*/
+
+a, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.link, a:hover, .fonteLaranja {
+	color: #E36C0A;
+}
+
+a.link {
+	text-decoration: underline;
+	word-wrap: break-word;
+}
+
+p {
+	color: #33383c;
+	font-size: 15px;
+}
+
+.cabecalho, .saveDate, p {
+	font-family: Cambria, Georgia, serif;
+}
+
+.cabecalho {
+	font-size: 14px; 
+}
+
+h1, h2,h3, h4, h5 {
+	color: #121315;
+	font-family: 'Fira Sans',Helvetica,Arial,sans-serif;
+	margin-top: 5%;
+	font-size: 22px;
+}
+
+h1.titulo {
+	font-size: 55px;
+	position: absolute; 
+	width: 528px;
+	z-index: 2;
+}
+
+img {
+	font-family: 'Fira Sans',Helvetica,Arial,sans-serif;
+	font-style: italic;
+}
+
+.saveDate {
+	position: relative;
+	top: 380px;
+	font-size: 12px;
+}
+
+li {
+	font-family: 'Fira Sans',Helvetica,Arial,sans-serif;
+}
+
+b {
+	color: #000000;
+}
+
+.fonteAzul {
+	color: #365F91;
+}
+
+.fonteVermelha {
+	color: #943634;
+}
+
+.fonteVerde {
+	color: #4F6228;
+}
+
+/*====== BLOCOS ======*/
+
+.blocoNota {
+	border: #f7c904 dotted 1px;
+	border-left: #f7c904 solid;
+	background-color: #f3f3e8;
+	padding: 10px 18px;
+	margin-bottom: 2%;
+}
+
+.blocoInformacao {
+	border: #5bc0de dotted 1px;
+	border-left: #5bc0de solid;
+	background-color: #F2F2F2;
+	padding: 10px 18px;
+	margin-bottom: 2%;
+}
+
+/*====== BOTÕES ======*/
+
+button.fonteBotao {
+	color: #000;
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#ddd 100%);
+	border: 1px #5480A7 solid;
+	border-radius: 2.3px;
+	font-size: 12px;
+	width: 70px;
+	height: 20px;
+	font-family: "Webly Sleek UI", "Frutiger", "Lucida Sans Unicode", "Lucida Grande", "Open Sans", sans-serif;
+}
+
+button.fonteBotao:hover {
+	border: 1px #777 solid;
+	box-shadow: 1px 1px 1px #000000 solid;
+	color: #000;
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#ddd 100%);
+	cursor: pointer;
+}
+
+button.fonteBotao:active {
+	box-shadow: inset 0px 0px 0px #000000;
+	background: -webkit-linear-gradient(top,  #ddd 0%,#f3f3f3 100%);
+}
+
+/*====== IMAGENS ======*/
+
+.brasao_img {
+	position: absolute;
+	opacity: 0.2;
+	filter:contrast(53%);
+	z-index: 1;
+}
+
+.nota_img {
+	float: left;
+	width: 4.5%;
+	margin-top: 1%;
+	margin-right: 2%;
+}
+
+@media only screen and (min-device-width: 1600px) {
+	.nota_img {
+		width: 2.7%;  	
+		margin-top: 0;
+	}
+}
+
+.blocoNota._1 {
+	max-width: 171px; 
+}
+
+.blocoNota._1 .nota_img {
+	float: left;
+	width: 14%;
+	margin-top: 1.5%;
+	margin-right: 5%;
+}
+
+.explicacao_img {
+	max-width: 18%;
+}
+
+.aviso_img {
+	max-width: 6%;
+}
+
+/*====== MANUAL MOBILIÁRIO ======*/
+
+/*====== ESTRUTURA ======*/
+
+.entendendoBasico._1 {
+	height: 85px;
+}
+
+.blocoNota._4 {
+	height: 77px;
+}
+
+.entendendoCadastro._3 {
+	height: 67px;
+}
+
+.blocoNota._6 {
+	height: 77px;
+}
+
+/*====== FONTES ======*/
+
+.blocoInformacao._1 p {
+	float: left;
+	width: 78%;
+}
+
+.blocoNota._2 p {
+	margin: 0;
+	float: right;
+	width: 91%;
+}
+
+.blocoNota._3 p {
+	width: 75%;
+	float: left;
+}
+
+.entendendoBasico._1 p {
+	padding-top: 2%;
+}
+
+.entendendoBasico._2 p {
+	float: left;
+	width: 73%;
+}
+
+.entendendoBasico._3 p {
+	float: right;
+	width: 69%;
+}
+
+.blocoNota._4 p {
+	width: 90%;
+}
+
+.entendendoCadastro._1 p {
+	width: 95%;
+	height: 44px;
+}
+
+.entendendoCadastro._2 p {
+	float: left;
+	width: 60%;
+}
+
+.entendendoCadastro._3 p {
+	width: 95%;
+	padding-top: 1%;
+}
+
+.blocoInformacao._2 p {
+	float: left;
+	width: 74%;
+	margin-right: 2%;
+}
+
+.blocoInformacao._3 p {
+	float: left;
+	width: 74%;
+	margin-right: 2%;
+}
+
+.blocoInformacao._4 p {
+	float: left;
+	width: 74%;
+	margin-right: 2%;
+}
+
+.blocoInformacao._5 p {
+	float: left;
+	width: 74%;
+	margin-right: 2%;
+}
+
+.blocoInformacao._6 p {
+	float: left;
+	width: 74%;
+	margin-right: 2%;  	
+}
+
+/*====== IMAGENS ======*/
+
+.manual_img {
+	max-width: 10%;
+}
+
+.gestao_cadastro_img, .mobiliario_img, .seta_img, .parametros_img,
+.cadastro_pessoas_img, .cadastro_pj_img,
+.cadastro_pf_img, .cadastro_pm_img, .vistoria_img {
+	max-width: 6.5%;
+}
+
+.entendendoBasico._1 .mobiliario_clique_img {
+	float: left;
+	margin-right: 2.5%
+}
+
+.entendendoBasico._3 .alterar_senha_img {
+	max-width: 25%;
+}
+
+.blocoNota._4 .checkbox_img {
+	float: right;
+	transform: translateY(-250%);
+	margin-right: 8%;
+}
+
+.entendendoCadastro._1 .cnpj_invalido_img {
+	float: left;
+	margin-right: 2%;
+}
+
+.entendendoCadastro._2 .erro_cadastro_exist_img {
+	max-width: 40%;
+}
+
+.entendendoCadastro._3 .operacao_realizada_img {
+	float: left;
+	margin-right: 2%;
+	transform: translateY(-8%);
+}
+
+.consulta_unico_img, .cadastro_pf2_img {
+	max-width: 90%;
+}
+
+.erros_pf_img {
+	border: 1px solid;
+}
+
+.semelhantes_img, .consulta_pm_img, .cadastro_pm_form_img, .cadastro_pm_processos_img,
+.alteracao_pm_img, .menu_pm_img, .selecao_cnae_img {
+	max-width: 100%;
+}
+
+.resultados_cnae_img, .fiscal_img {
+	width: 666px;
+}
+
+.lupa_img,.search_img {
+	width: 3.5%;
+}
